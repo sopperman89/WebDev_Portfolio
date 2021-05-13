@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  color: #95bcf2;
+  font-family: "Satisfy", cursive;
+}
+
+h3 {
+  color: #95bcf2;
+  font-family: "Satisfy", cursive;
+}
+
+#me {
+  background-color: #95bcf2;
+  border: none;
+  color: black;
+  padding: 30px 32px;
+  font-size: 1.1em;
+  font-family: "Satisfy", cursive;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+#projects {
+  background-color: #95bcf2;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  font-size: 1.1em;
+  font-family: "Satisfy", cursive;
+  margin: 10px;
+  border-radius: 50%;
+}
