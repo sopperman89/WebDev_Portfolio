@@ -8,6 +8,16 @@ import Projects from "./Projects";
 
 const particlesOptions = {
   particles: {
+    color: {
+      value: "black"
+    },
+    links: {
+      color: "#000000",
+      distance: 150,
+      enable: true,
+      opacity: 0.5,
+      width: 1
+    },
     number: {
       value: 100,
       density: {
