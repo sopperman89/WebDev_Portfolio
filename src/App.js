@@ -37,7 +37,9 @@ const textArray = ["a React Developer", "an Engineer", "a Problem Solver"];
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { textIdx: 0 };
+    this.state = {
+      textIdx: 0
+    };
   }
 
   handleClick() {
