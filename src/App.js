@@ -1,10 +1,10 @@
+import React, { Component } from "react";
 import "./styles.css";
-import React from "react";
-// import WebDev from "./WebDev";
-import Particles from "react-particles-js";
 import Main from "./Main";
-import About from "./About";
 import Projects from "./Projects";
+import Particles from "react-particles-js";
+
+const textArray = ["a React Developer", "an Engineer", "a Problem Solver"];
 
 const particlesOptions = {
   particles: {
@@ -28,25 +28,46 @@ const particlesOptions = {
   }
 };
 
-export default function App() {
-  const [currentView, setCurrentView] = React.useState("view1");
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      textIdx: 0,
+      route: "Main"
+    };
+  }
 
-  let handleClick = (page) => {
-    setCurrentView(page);
+  componentDidMount() {
+    this.timeout = setInterval(() => {
+      let currentIdx = this.state.textIdx;
+      this.setState({ textIdx: currentIdx + 1 });
+    }, 1500);
+  }
+
+  componentDidUnmount() {
+    clearInterval(this.timeout);
+  }
+
+  onRouteChange = (route) => {
+    this.setState({ route: route });
   };
 
-  return (
-    <div className="App">
-      <Particles className="particles" params={particlesOptions} />
-      {/* <WebDev /> */}
-      <Main onClick={handleClick} />
-      <div>
-        {currentView === "Main" ? (
-          <About onClick={handleClick} />
+  render() {
+    let textThatChanges = textArray[this.state.textIdx % textArray.length];
+    return (
+      <section className="App">
+        <Particles className="particles" params={particlesOptions} />
+        {this.state.route === "Main" ? (
+          <Main
+            textThatChanges={textThatChanges}
+            onRouteChange={this.onRouteChange}
+          />
         ) : (
-          <Projects onClick={handleClick} />
+          <Projects onRouteChange={this.onRouteChange} />
         )}
-      </div>
-    </div>
-  );
+      </section>
+    );
+  }
 }
+
+export default App;
