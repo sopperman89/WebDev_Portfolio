@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./styles.css";
-import Main from "./Main";
-import Projects from "./Projects";
+import Main from "../components/Main";
+import Projects from "../components/Projects";
 import Particles from "react-particles-js";
 
 const textArray = ["a React Developer", "an Engineer", "a Problem Solver"];
