@@ -1,12 +1,13 @@
 import React from "react";
+import img from "../images/SmartBrain.PNG";
+import "./Card.css";
 
 const ToDo = () => {
   return (
     <div className="Card">
-      <img src="" alt="" />
+      <img src={img} alt="" />
       <div>
-        <h2></h2>
-        <p></p>
+        <h4>SmartBrain App</h4>
       </div>
     </div>
   );

@@ -1,3 +1,25 @@
 .Card {
-  background-color: black;
+  width: 15em;
+  margin: 10px;
+}
+
+.SB {
+  background-image: url("../images/SmartBrain.PNG");
+  background-size: cover;
+  background-position: center;
+}
+
+.image {
+  margin: 5px;
+}
+
+p {
+  font-size: 0.75em;
+  color: black;
+  margin: 20px;
+}
+
+.info {
+  background-color: #95bcf2;
+  border-radius: 20px;
 }
