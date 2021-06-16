@@ -3,8 +3,9 @@ import "./styles.css";
 import Main from "../components/Main";
 import Projects from "../components/Projects";
 import Particles from "react-particles-js";
+import NavBar from "../components/NavBar";
 
-const textArray = ["a React Developer", "an Engineer", "a Problem Solver"];
+const textArray = ["React Developer", "Engineer", "Problem Solver"];
 
 const particlesOptions = {
   particles: {
@@ -56,6 +57,7 @@ class App extends Component {
     let textThatChanges = textArray[this.state.textIdx % textArray.length];
     return (
       <section className="App">
+        <NavBar />
         <Particles className="particles" params={particlesOptions} />
         {this.state.route === "Main" ? (
           <Main

@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgb(175, 135, 214);
+  color: black;
+  font-family: Helvetica;
+  font-weight: 600;
+}
+
+.navbar__item {
+  padding: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+}

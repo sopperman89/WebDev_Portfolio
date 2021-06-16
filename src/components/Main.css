@@ -3,41 +3,28 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
-}
-
-h1 {
-  color: #80ba00;
-  font-family: "Satisfy", cursive;
-}
-
-h5 {
-  color: #80ba00;
-}
-
-h3 {
-  color: #80ba00;
-  font-family: "POLYA";
 }
 
 .projects {
   background-color: #80ba00;
-  border: none;
   color: black;
-  padding: 15px 60px;
-  font-size: 1.3em;
-  font-family: "Satisfy", cursive;
+  padding: 15px 50px;
+  font-size: 30px;
+  font-family: "Archivo Black", sans-serif;
   margin: 10px;
-  border-radius: 50%;
-}
-
-@font-face {
-  font-family: Polya;
-  src: url(https://cdn.matteobruni.it/fonts/Polya/Polya.otf);
+  border-radius: 15%;
 }
 
 h1 {
-  font-family: "POLYA";
-  text-align: center;
-  font-size: 2em;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.Main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
