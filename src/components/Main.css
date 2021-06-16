@@ -7,17 +7,21 @@
 }
 
 h1 {
-  color: #95bcf2;
+  color: #80ba00;
   font-family: "Satisfy", cursive;
 }
 
+h5 {
+  color: #80ba00;
+}
+
 h3 {
-  color: #95bcf2;
+  color: #80ba00;
   font-family: "POLYA";
 }
 
 .projects {
-  background-color: #95bcf2;
+  background-color: #80ba00;
   border: none;
   color: black;
   padding: 15px 60px;

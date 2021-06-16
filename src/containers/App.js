@@ -9,7 +9,7 @@ const textArray = ["a React Developer", "an Engineer", "a Problem Solver"];
 const particlesOptions = {
   particles: {
     color: {
-      value: "black"
+      value: "#000000"
     },
     links: {
       color: "#000000",
