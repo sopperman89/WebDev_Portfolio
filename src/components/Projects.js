@@ -6,14 +6,13 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div>
-      <header>
-        <p>Back to Home</p>
-      </header>
-      <SmartBrain className="Cards" />
-      {/* <ToDo />
-      <MacCal /> */}
-      {/* <footer>Links go Here</footer> */}
+    <div className="proj flex-container">
+      <div className="Card">
+        <SmartBrain />
+        {/* <ToDo />
+        <MacCal /> */}
+        {/* <footer>Links go Here</footer> */}
+      </div>
     </div>
   );
 };

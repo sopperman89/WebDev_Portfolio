@@ -56,7 +56,7 @@ class App extends Component {
   render() {
     let textThatChanges = textArray[this.state.textIdx % textArray.length];
     return (
-      <section className="App">
+      <div className="App flex-container">
         <NavBar />
         <Particles className="particles" params={particlesOptions} />
         {this.state.route === "Main" ? (
@@ -67,7 +67,7 @@ class App extends Component {
         ) : (
           <Projects onRouteChange={this.onRouteChange} />
         )}
-      </section>
+      </div>
     );
   }
 }

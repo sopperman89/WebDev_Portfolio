@@ -1,15 +1,28 @@
 .App {
   font-family: "Archivo Black", sans-serif;
-  text-align: center;
   color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .particles {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: -10;
-  background-color: #8a20cc;
+  z-index: -1;
+  background-image: linear-gradient(to bottom right, #400863, #b57dd8);
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
