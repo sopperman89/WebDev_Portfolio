@@ -7,7 +7,7 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <div className="proj flex-container">
-      <div className="Card">
+      <div>
         <SmartBrain />
         {/* <ToDo />
         <MacCal /> */}
