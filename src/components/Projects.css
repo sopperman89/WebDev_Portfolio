@@ -2,9 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 75%;
-  margin: 10px;
+  margin: 20px;
   border: 5px solid rgb(175, 135, 214);
+}
+
+.cardCon {
+  width: 60%;
 }
 
 .proj {
@@ -14,14 +17,27 @@
 }
 
 .link {
+  /* height: 100%; */
   margin: 20px;
+  /* background-color: rgb(175, 135, 214); */
+}
+
+.linkCon {
+  height: 200px;
+  margin: 0px;
+  background-color: rgb(175, 135, 214);
 }
 
 .desc {
   max-width: 500px;
+  min-width: 200px;
   margin: 20px;
 }
 
 .title {
+  margin: 20px;
+}
+
+img {
   margin: 20px;
 }

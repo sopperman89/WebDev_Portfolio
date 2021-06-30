@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../images/SmartBrain.PNG";
-import "./Card.css";
+// import "./Card.css";
 
 const ToDo = () => {
   return (

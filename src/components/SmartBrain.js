@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../images/SmartBrain.PNG";
-import "./Card.css";
+// import "./Card.css";
 
 const SmartBrain = () => {
   return (
@@ -15,16 +15,26 @@ const SmartBrain = () => {
           using React, node.js, express.
         </p>
       </div>
-      <div className="link">
-        <div>
-          <a href="https://www.w3schools.com" target="_blank" rel="noreferrer">
-            Github
-          </a>
-        </div>
+      <div className="linkCon">
         <div className="link">
-          <a href="https://www.w3schools.com" target="_blank" rel="noreferrer">
-            Live
-          </a>
+          <div>
+            <a
+              href="https://www.w3schools.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </div>
+          <div className="link">
+            <a
+              href="https://www.w3schools.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live
+            </a>
+          </div>
         </div>
       </div>
     </div>
