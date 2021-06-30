@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-around;
   margin: 20px;
+  padding: 1px;
   border: 5px solid rgb(175, 135, 214);
 }
 
@@ -17,15 +18,15 @@
 }
 
 .link {
-  /* height: 100%; */
   margin: 20px;
   /* background-color: rgb(175, 135, 214); */
 }
 
 .linkCon {
-  height: 200px;
-  margin: 0px;
-  background-color: rgb(175, 135, 214);
+  /* display: flex;
+  align-items: center; */
+  /* height: 100%; */
+  /* background-color: rgb(175, 135, 214); */
 }
 
 .desc {
@@ -40,4 +41,9 @@
 
 img {
   margin: 20px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
 }
