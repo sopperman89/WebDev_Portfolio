@@ -9,7 +9,8 @@
     "react-dom": "17.0.2",
     "react-particles-js": "3.5.3",
     "react-scripts": "4.0.0",
-    "react-tilt": "0.1.4"
+    "react-tilt": "0.1.4",
+    "tsparticles": "1.30.2"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
