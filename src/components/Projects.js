@@ -1,7 +1,5 @@
 import React from "react";
 import Card from "./Card";
-// import ToDo from "./ToDo";
-// import MacCal from "./MacCal";
 import "./Projects.css";
 import styled from "styled-components";
 
