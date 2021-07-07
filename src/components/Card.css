@@ -1,0 +1,10 @@
+.inner {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: calc(50vw - 160px);
+}
+
+img {
+  margin: 0;
+  border-radius: 15px;
+}
