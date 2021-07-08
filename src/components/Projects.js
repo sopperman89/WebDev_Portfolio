@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import "./Projects.css";
+// import "./Projects.css";
 import styled from "styled-components";
 
 const Page = styled.div`
