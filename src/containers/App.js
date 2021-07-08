@@ -3,7 +3,8 @@ import "./styles.css";
 import Main from "../components/Main";
 import Projects from "../components/Projects";
 import Particles from "react-particles-js";
-import NavBar from "../components/NavBar";
+// import NavBar from "../components/NavBar";
+import styled from "styled-components";
 
 const textArray = ["React Developer", "Engineer", "Problem Solver"];
 
@@ -59,6 +60,18 @@ const particlesOptions = {
   }
 };
 
+const Home = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; /* mobile viewport bug fix */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+`;
+
 class App extends Component {
   constructor() {
     super();
@@ -86,8 +99,8 @@ class App extends Component {
   render() {
     let textThatChanges = textArray[this.state.textIdx % textArray.length];
     return (
-      <div className="App flex-container">
-        <NavBar />
+      <Home>
+        {/* <NavBar /> */}
         <Particles className="particles" params={particlesOptions} />
         {this.state.route === "Main" ? (
           <Main
@@ -97,7 +110,7 @@ class App extends Component {
         ) : (
           <Projects onRouteChange={this.onRouteChange} />
         )}
-      </div>
+      </Home>
     );
   }
 }

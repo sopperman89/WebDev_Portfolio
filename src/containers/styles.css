@@ -1,4 +1,4 @@
-.App {
+/* .App {
   font-family: "Archivo Black", sans-serif;
   color: #ffffff;
   height: 100vh;
@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
+} */
 
 .particles {
   position: fixed;
@@ -22,7 +22,7 @@
   background-image: linear-gradient(to bottom right, #400863, #b57dd8);
 }
 
-body {
+/* body {
   margin: 0;
   padding: 0;
-}
+} */

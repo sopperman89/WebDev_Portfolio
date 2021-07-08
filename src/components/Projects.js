@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 // import "./Projects.css";
 import styled from "styled-components";
+import projects from "../projects";
 
 const Page = styled.div`
   display: flex;
@@ -44,11 +45,15 @@ const Projects = () => {
   return (
     <Page>
       <Grid>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {projects.map((projects, index) => (
+          <Card
+            key={projects.description}
+            hexa={projects.hexa}
+            title={projects.title}
+            description={projects.description}
+            image={projects.image}
+          />
+        ))}
       </Grid>
     </Page>
   );

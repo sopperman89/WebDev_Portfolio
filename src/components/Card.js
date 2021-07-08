@@ -1,6 +1,5 @@
 import React from "react";
-// import "./Card.css";
-import img from "../images/SmartBrain.PNG";
+// import img from "../images/SmartBrain.PNG";
 import styled from "styled-components";
 
 const cardWidth = 320;
@@ -110,16 +109,15 @@ const Style = styled.button`
   }
 `;
 
-const Card = ({ name, email, id }) => {
-  return (
-    <Style>
-      <Screenshot image={img} />
-      <Content>
-        <Title>Project Name</Title>
-        <Description>Links</Description>
-      </Content>
-    </Style>
-  );
-};
+const Card = ({ hexa, title, description, image }) => (
+  <Style>
+    <Screenshot image={image} />
+    <Content>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+      <BottomBar background={hexa} />
+    </Content>
+  </Style>
+);
 
 export default Card;
