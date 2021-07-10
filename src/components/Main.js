@@ -1,43 +1,73 @@
 import React from "react";
-import "./Main.css";
 import styled from "styled-components";
 
 const Section = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 60%;
   height: 100%;
-  min-height: 100vh;
+`;
+
+const Button = styled.div`
+  background-color: #228b22;
+  color: black;
+  padding: 15px 50px;
+  font-size: 3em;
+  font-family: "Archivo Black", sans-serif;
+  margin: 20px;
+  border-radius: 50%;
+`;
+
+const About = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(245, 245, 245);
+  font-size: 2em;
+  margin: 20px;
+`;
+
+const Tag = styled.div`
+  color: rgb(245, 245, 245);
+  font-size: 2em;
+  margin: 20px;
+`;
+
+const Shuffle = styled.div`
+  color: #cbc3e3;
+  font-size: 3em;
+  margin: 20px;
+`;
+
+const Intro = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cbc3e3;
+  font-size: 5em;
+  margin: 20px;
 `;
 
 const Main = ({ textThatChanges, onRouteChange }) => (
   <Section>
-    <div className="intro flex-container">
-      <h1>Hello, I am Steven Opperman</h1>
-      <h3>{textThatChanges}</h3>
-      <div id="buttons">
-        <button
-          onClick={() => onRouteChange("Information")}
-          className="projects"
-          type="submit"
-        >
-          View my work!
-        </button>
-      </div>
-    </div>
-    <div className="flex-container">
-      <div className="about">
-        <p className="white pmain">
-          I am a Front-end Web Developer fueled by determination and purpose. I
-          am ready to bring your ideas and vision to life! We will work together
-          to charge ahead and create something beautiful.
-        </p>
-      </div>
-      <div className="">
-        <p className="white pmain">Lets take your project to the next level!</p>
-      </div>
-    </div>
+    <Intro>Hello, I am Steven Opperman</Intro>
+    <Shuffle>{textThatChanges}</Shuffle>
+    <Button
+      onClick={() => onRouteChange("Information")}
+      className="projects"
+      type="submit"
+    >
+      View my work!
+    </Button>
+    <About>
+      I am a Front-end Web Developer fueled by determination and purpose. I am
+      ready to bring your ideas and vision to life! We will work together to
+      charge ahead and create something beautiful.
+    </About>
+    <Tag>Lets take your project to the next level!</Tag>
   </Section>
 );
 
