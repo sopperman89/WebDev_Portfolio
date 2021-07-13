@@ -11,7 +11,7 @@ const Section = styled.div`
 `;
 
 const Button = styled.div`
-  background-color: #228b22;
+  background-color: #007ee7;
   color: black;
   padding: 15px 50px;
   font-size: 3em;
@@ -24,19 +24,19 @@ const About = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(245, 245, 245);
+  color: #000000;
   font-size: 2em;
   margin: 20px;
 `;
 
 const Tag = styled.div`
-  color: rgb(245, 245, 245);
+  color: #000000;
   font-size: 2em;
   margin: 20px;
 `;
 
 const Shuffle = styled.div`
-  color: #cbc3e3;
+  color: #000000;
   font-size: 3em;
   margin: 20px;
 `;
@@ -46,7 +46,7 @@ const Intro = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #cbc3e3;
+  color: #000000;
   font-size: 5em;
   margin: 20px;
 `;

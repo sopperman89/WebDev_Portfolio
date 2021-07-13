@@ -3,7 +3,6 @@ import "./styles.css";
 import Main from "../components/Main";
 import Projects from "../components/Projects";
 import Particles from "react-particles-js";
-// import NavBar from "../components/NavBar";
 import styled from "styled-components";
 
 const textArray = ["React Developer", "Engineer", "Problem Solver"];
@@ -64,6 +63,7 @@ const Home = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   min-height: 100vh;
